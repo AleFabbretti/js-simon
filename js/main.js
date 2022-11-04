@@ -32,5 +32,7 @@ const container = document.querySelector(".numbers");
 //attraverso un ciclo vado a stampare i numeri all'interno della pagina
 
 for ( i = 0; i < numberArray.length; i++) {
-    
+    let list = document.createElement("div");
+    list.innerHTML = numberArray[i];
+    container.append(list);
 }
