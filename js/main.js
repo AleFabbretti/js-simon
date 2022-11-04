@@ -42,3 +42,23 @@ for ( i = 0; i < numberArray.length; i++) {
 setInterval(function (){
     container.classList.add(`ghost-numbers`);
 }, 30000);
+
+//creo un prompt dove l'utente inserirà i numeri 
+
+let userNumber;
+let userNumberChoise = [];
+let result = [];
+
+setTimeout(function(){
+    for ( i = 0; i < 5; i++) {
+        userNumber = Number(prompt("Inserisci i numeri visualizzati precedentemente"));
+        userNumberChoise.push(userNumber);
+    }
+    for ( let i = 0; i < numberArray.length; i++){
+        if (userNumberChoise.includes(numberArray[i])) {
+            result.push(numberArray[i]);
+        }
+    }  
+}, 31000);
+
+        
