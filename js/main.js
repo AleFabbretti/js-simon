@@ -36,3 +36,9 @@ for ( i = 0; i < numberArray.length; i++) {
     list.innerHTML = numberArray[i];
     container.append(list);
 }
+
+//creo un timer di 30 secondi, passati i quali i numeri precedentemente stampati scompariranno
+
+setInterval(function (){
+    container.classList.add(`ghost-numbers`);
+}, 30000);
