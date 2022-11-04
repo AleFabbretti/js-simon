@@ -59,6 +59,14 @@ setTimeout(function(){
             result.push(numberArray[i]);
         }
     }  
+
+// vittoria o sconfitta
+    if (numberArray.lenght === result.length) {
+        alert("Hai vinto!!!!!")
+
+    } else {
+        alert(`Mi dispiace, Hai perso!!! Hai indovinato solo ${result.length} numeri, che sono ${}`);
+    }
 }, 31000);
 
         
