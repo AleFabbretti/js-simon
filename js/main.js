@@ -24,3 +24,13 @@ while (numberArray.length < 5) {
     }
 }
 console.log(numberArray);
+
+//seleziono il div nel quale stampare i numeri generati
+
+const container = document.querySelector(".numbers");
+
+//attraverso un ciclo vado a stampare i numeri all'interno della pagina
+
+for ( i = 0; i < numberArray.length; i++) {
+    
+}
